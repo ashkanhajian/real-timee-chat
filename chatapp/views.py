@@ -4,3 +4,7 @@ from django.shortcuts import render
 def index(request):
     context = {}
     return render(request,'main/chatapp.html',context)
+
+def detail(request,pk):
+    context = {}
+    return render(request,'main/detail.html',context)
